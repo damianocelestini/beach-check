@@ -75,3 +75,13 @@ Open-Meteo's free tier is for **non-commercial use**, which fits a portfolio pro
 4. All beaches from an open dataset, with a search box
 5. Crowd and parking signals
 6. Better wave data from a nearshore source, plus real sand-distance estimates
+
+## Install it as an app (PWA)
+
+The site is an installable web app. Files involved: `manifest.webmanifest` (name, icons, colours), `sw.js` (service worker) and the `icons/` folder.
+
+- **iPhone (Safari):** Share button → Add to Home Screen.
+- **Android (Chrome):** menu → Install app (or Add to Home Screen).
+- **Desktop (Chrome/Edge):** install icon in the address bar.
+
+The service worker keeps a copy of the app's own files only. Weather, wave and tide data are never stored, so they are always live. Files are fetched from the network first, so changes you publish appear straight away. If you change the list of files in `sw.js`, also change the `CACHE` version name.
