@@ -159,7 +159,7 @@
     const fetched = new Date(d.fetchedAt).toLocaleTimeString('en-IE', { hour: '2-digit', minute: '2-digit', timeZone: BC.TZ });
 
     app.innerHTML =
-      '<div class="hero"><h1>Warm in the park. What about on the sand?</h1>' +
+      '<div class="hero"><h1>Warm in the city. What about on the beach?</h1>' +
       '<p>Pick a beach and a time. See tide, wind, waves, rain and temperature there, side by side with where you are, before you pack the car.</p></div>' +
 
       '<div class="where"><span class="eyebrow">Your spot</span><b>' + state.user.label + '</b>' +
