@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beach Check Ireland – is it a good beach day, right now?</title>
+<meta name="description" content="Live tide, wind, waves, rain and temperature for Irish beaches, compared with where you are now.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar"><div class="topbar-in">
+  <div class="brand">Beach Check <span>Ireland</span></div>
+  <small>Live data · Irish local time</small>
+</div></div>
+
+<main class="wrap" id="app" aria-live="polite">
+  <div class="state">Loading live conditions for Irish beaches…</div>
+</main>
+
+<script src="beaches.js"></script>
+<script src="logic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
