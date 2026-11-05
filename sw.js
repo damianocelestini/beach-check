@@ -11,7 +11,7 @@
 const CACHE = 'beach-check-v1';
 const SHELL = [
   './', 'index.html', 'style.css', 'app.js', 'logic.js', 'beaches.js',
-  'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png'
+  'manifest.webmanifest', 'icon-192.png', 'icon-512.png'
 ];
 
 self.addEventListener('install', (e) => {
